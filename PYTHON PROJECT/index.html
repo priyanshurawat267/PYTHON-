@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Code<span>Academy</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="searchBtn" class="icon-btn">
+                🔍
+            </button>
+
+            <button id="themeBtn" class="icon-btn">
+                🌙
+            </button>
+
+            <button id="menuBtn" class="icon-btn">
+                ⋮
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= THREE DOT MENU ================= -->
+
+    <div id="moreMenu" class="more-menu">
+
+        <button id="menuTheme">
+            🌙 Dark Mode
+        </button>
+
+        <button onclick="openContact()">
+            📞 Contact
+        </button>
+
+        <button onclick="openGmail()">
+            📧 Gmail
+        </button>
+
+        <button onclick="openMap()">
+            📍 Map
+        </button>
+
+        <button onclick="showNotification()">
+            🔔 Notifications
+        </button>
+
+        <button onclick="showSettings()">
+            ⚙️ Settings
+        </button>
+
+        <button onclick="showAbout()">
+            ℹ️ About
+        </button>
+
+    </div>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <div id="searchBox" class="search-box">
+
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="Search courses..."
+        >
+
+    </div>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    🚀 Learn • Build • Grow
+                </div>
+
+                <h1>
+                    Learn
+                    <span>Python</span>
+                    the smart way.
+                </h1>
+
+                <p>
+                    Learn programming with practical projects,
+                    real-world examples and simple explanations.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="/course" class="primary-btn">
+                        Start Learning →
+                    </a>
+
+                    <a href="#courses" class="secondary-btn">
+                        Explore Courses
+                    </a>
+
+                </div>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>10K+</strong>
+                        <small>Students</small>
+                    </div>
+
+                    <div>
+                        <strong>25+</strong>
+                        <small>Courses</small>
+                    </div>
+
+                    <div>
+                        <strong>4.9★</strong>
+                        <small>Rating</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CODE WINDOW -->
+
+            <div class="hero-card">
+
+                <div class="code-window">
+
+                    <div class="window-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <pre><code>name = "Python"
+
+print("Hello", name)
+
+# Start learning 🚀</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COURSES ================= -->
+
+        <section id="courses" class="courses">
+
+            <div class="section-heading">
+
+                <span>LEARN WITH US</span>
+
+                <h2>
+                    Popular Courses
+                </h2>
+
+                <p>
+                    Build skills that you can actually use.
+                </p>
+
+            </div>
+
+
+            <div class="course-grid">
+
+                <!-- Python -->
+
+                <div class="course-card">
+
+                    <div class="course-icon">
+                        🐍
+                    </div>
+
+                    <h3>
+                        Python
+                    </h3>
+
+                    <p>
+                        Learn Python from basics to advanced concepts.
+                    </p>
+
+                    <a href="/course">
+                        View Course →
+                    </a>
+
+                </div>
+
+
+                <!-- Web Development -->
+
+                <div class="course-card">
+
+                    <div class="course-icon">
+                        🌐
+                    </div>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        Build modern websites using HTML, CSS and JavaScript.
+                    </p>
+
+                    <a href="#">
+                        View Course →
+                    </a>
+
+                </div>
+
+
+                <!-- FastAPI -->
+
+                <div class="course-card">
+
+                    <div class="course-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        FastAPI
+                    </h3>
+
+                    <p>
+                        Create fast and powerful APIs using Python.
+                    </p>
+
+                    <a href="#">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about">
+
+            <div>
+
+                <span>
+                    ABOUT US
+                </span>
+
+                <h2>
+                    Learn by building real projects.
+                </h2>
+
+                <p>
+                    Code Academy helps beginners learn programming
+                    through practical examples and projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact">
+
+            <div class="section-heading">
+
+                <span>
+                    CONTACT
+                </span>
+
+                <h2>
+                    Let's connect
+                </h2>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <p>
+                    📧 codeacademy@gmail.com
+                </p>
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+                <p>
+                    📍 India
+                </p>
+
+                <button onclick="openGmail()">
+                    Send Email
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                Code Academy
+            </h3>
+
+            <p>
+                Learn. Build. Grow.
+            </p>
+
+        </div>
+
+        <div>
+
+            <p>
+                © 2026 Code Academy
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================================================= -->
+    <!-- ================= ADVERTISEMENT ================= -->
+    <!-- ================================================= -->
+
+    <div id="adOverlay" class="ad-overlay">
+
+        <div id="adBox" class="ad-box">
+
+            <!-- Close -->
+
+            <button id="closeAd" class="close-ad">
+                ×
+            </button>
+
+
+            <!-- Label -->
+
+            <div class="ad-label">
+                LIMITED TIME OFFER
+            </div>
+
+
+            <!-- Company -->
+
+            <div id="adCompany" class="ad-company">
+                Code Academy
+            </div>
+
+
+            <!-- Image -->
+
+            <img
+                id="adImage"
+                src=""
+                alt="Special Offer"
+            >
+
+
+            <!-- Discount -->
+
+            <div id="adDiscount" class="ad-discount">
+                50% OFF
+            </div>
+
+
+            <!-- Title -->
+
+            <h2 id="adTitle">
+                Learn Python
+            </h2>
+
+
+            <!-- Description -->
+
+            <p id="adDescription">
+                Learn Python from beginner to advanced.
+            </p>
+
+
+            <!-- Offer -->
+
+            <div id="adOffer" class="ad-offer">
+                Special Offer
+            </div>
+
+
+            <!-- Button -->
+
+            <button id="adButton" class="ad-button">
+                Claim Offer
+            </button>
+
+
+            <!-- Small text -->
+
+            <p class="ad-small">
+                Limited time offer • Terms may apply
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CONTACT MODAL ================= -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                onclick="closeModal()"
+                class="modal-close"
+            >
+                ×
+            </button>
+
+            <h2 id="modalTitle">
+                Contact
+            </h2>
+
+            <p id="modalText">
+                Contact Code Academy.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
