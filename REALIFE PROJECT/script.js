@@ -1,29 +1,22 @@
 /* ================= THREE DOT MENU ================= */
-
 const menuBtn = document.getElementById("menuBtn");
 const moreMenu = document.getElementById("moreMenu");
 
 menuBtn.addEventListener("click", () => {
 
     moreMenu.classList.toggle("show");
-
 });
 
-
 /* ================= SEARCH ================= */
-
 const searchBtn = document.getElementById("searchBtn");
 const searchBox = document.getElementById("searchBox");
 
 searchBtn.addEventListener("click", () => {
 
     searchBox.classList.toggle("show");
-
 });
 
-
 /* ================= DARK / LIGHT ================= */
-
 const themeBtn = document.getElementById("themeBtn");
 const menuTheme = document.getElementById("menuTheme");
 
@@ -66,13 +59,10 @@ if (localStorage.getItem("theme") === "dark") {
     menuTheme.textContent = "☀️ Light Mode";
 }
 
-
 /* ================= ADVERTISEMENT ================= */
-
 /* Show ad after 3 seconds */
 
 loadAdvertisement();
-
 /* Close ad */
 
 closeAd.addEventListener("click", () => {
@@ -115,11 +105,8 @@ adOverlay.addEventListener("click", (event) => {
     if (event.target === adOverlay) {
 
         adOverlay.classList.remove("show");
-
     }
-
 });
-
 
 /* Show ad after 3 seconds */
 
@@ -130,31 +117,23 @@ loadAdvertisement();
 closeAd.addEventListener("click", () => {
 
     adOverlay.classList.remove("show");
-
 });
 
-
 /* Close when clicking outside */
-
 adOverlay.addEventListener("click", (event) => {
 
     if (event.target === adOverlay) {
 
         adOverlay.classList.remove("show");
-
     }
-
 });
 
-
 /* ================= MENU OPTIONS ================= */
-
 function openGmail() {
 
     window.location.href =
         "mailto:codeacademy@gmail.com";
 }
-
 
 function openMap() {
 
@@ -162,7 +141,6 @@ function openMap() {
         "https://www.google.com/maps/search/?api=1&query=Code+Academy",
         "_blank"
     );
-
 }
 
 
@@ -178,7 +156,6 @@ function openContact() {
 
 }
 
-
 function showNotification() {
 
     document.getElementById("modalTitle").textContent =
@@ -190,7 +167,6 @@ function showNotification() {
     document.getElementById("modal").classList.add("show");
 
 }
-
 
 function showSettings() {
 
@@ -204,7 +180,6 @@ function showSettings() {
 
 }
 
-
 function showAbout() {
 
     document.getElementById("modalTitle").textContent =
@@ -216,7 +191,6 @@ function showAbout() {
     document.getElementById("modal").classList.add("show");
 
 }
-
 
 function closeModal() {
 
